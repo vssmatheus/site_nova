@@ -31,12 +31,12 @@
 </head>
 
 <body>
-  <header>
+  <header class="barra">
     <!-- linha colorida -->
     <div class="linha"></div>
     <!-- INÍCIO DO NAVBAR -->
-    <nav class="barra navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#" style="color: rgb(37, 100, 182)"> <strong>Home</strong> </a>
+    <nav class="shadow p-3 mb-5 navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#" style="color: rgb(37, 100, 182)"> <img style="width: 80px;" src="assets/images/logo-nova.png" alt="logo-nova"> </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -69,7 +69,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- IMAGEM 01 -->
-          <img class="item-carousel" src="assets/images/img_mountains_wide.jpg" alt="slide 01">
+          <img class="item-carousel" style="object-fit: cover" src="assets/images/slide01.jpg" alt="slide 01">
           <div class="capa"></div>
           <div class="container">
             <div class="carousel-caption text-left">
@@ -81,10 +81,10 @@
         </div>
         <div class="carousel-item">
           <!-- IMAGEM 02 -->
-          <img class="item-carousel" src="assets/images/img_snow_wide.jpg" alt="slide 01">
+          <img class="item-carousel" src="assets/images/slide02.jpg" alt="slide 01">
           <div class="capa"></div>
           <div class="container">
-            <div class="carousel-caption">
+            <div class="carousel-caption text-left">
               <h1>Another example headline.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
@@ -93,10 +93,10 @@
         </div>
         <div class="carousel-item">
           <!-- IMAGEM 03 -->
-          <img class="item-carousel" src="assets/images/img_nature_wide.jpg" alt="slide 01">
+          <img class="item-carousel" src="assets/images/slide04.jpg" alt="slide 01">
           <div class="capa"></div>
           <div class="container">
-            <div class="carousel-caption text-right">
+            <div class="carousel-caption text-left">
               <h1>One more for good measure.</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
@@ -116,32 +116,45 @@
     </div>
     <!-- FIM DO CAROUSEL -->
 
-    <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
   <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+      <!-- COLUNAS COM IMAGENS CIRCULARES -->
       <div class="row">
+        <!-- ITEM 01 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
           <h2>Heading</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        <!-- ITEM 02 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
           <h2>Heading</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        <!-- ITEM 03 -->
         <div class="col-lg-4">
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
           <h2>Heading</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
+        <!-- COLUNAS COM IMAGENS CIRCULARES -->
+
+        <!-- SECTIONS -->
+
+        <section class="intro">  
+            <div class="content" style="position: absolute; margin: 20px; color: #ffffff; ">
+              <h1>You can create full screen sections without javascript.</h1>
+              <p>The height is set to 90vh, that means 90% height.</p>
+           </div>
+           <div class="capa-01"></div>
+        </section>
+                
+        <!-- SECTIONS -->
+
       </div><!-- /.row -->
   
   

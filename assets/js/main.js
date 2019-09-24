@@ -35,5 +35,14 @@ $('.carousel').carousel({
   interval: 2000
 })
 
+new vUnit({
+    CSSMap: {
+        '.vh': {
+            property: 'height',
+            reference: 'vh'
+        }
+    }
+}).init();
+
 
 
